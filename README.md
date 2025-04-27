@@ -35,12 +35,7 @@ This work was developed and tested using Notebooks on the [Kaggle](https://www.k
  * Add the dataset containing Family Guy images (`.jpeg`, `.png`) and matching `.txt` caption files [from Kaggle](https://www.kaggle.com/datasets/oulcanakca/family-guy-lora-data/data).
     * Make sure that the `.txt` files contain the trigger word (e.g. `familyguy style`). If necessary, add the trigger word using the preparation script in the Notebook.
 
-### 2. LoRA Usage/Inference Notebook
-
-
-### Usage
-
-### 3. Training the LoRA Model
+### 2. Training the LoRA Model
 
 1. **Open the Training Notebook:** Open the Kaggle Notebook you prepared for the LoRA training.
 2. **Data Preparation:** Load your data set and run the preparation scripts (adding trigger word, creating a folder with only images) if necessary.
@@ -52,7 +47,7 @@ This work was developed and tested using Notebooks on the [Kaggle](https://www.k
 4. **Start Training:** After running the required setup and preparation cells, run the training cell starting with `%%bash`.
 5. **Get the Result:** When the training is complete, you will have a LoRA file with `.safetensors` extension in the folder you specified as `OUTPUT_DIR`. Save or download this file.
 
-### 4. Generating Images with Trained LoRA
+### 3. Generating Images with Trained LoRA
 
 1. **Prepare a Prompt:** Go to the "Text-to-Image" (or similar) tab and type your prompt. Always use the trigger word you used in the tutorial (`familyguy style`) at the beginning or inside your prompt.
     * Example Prompt: `familyguy style, a cat wearing a wizard hat, detailed illustration`
@@ -65,6 +60,7 @@ In this project, approximately 25 images from the Family Guy cartoon series were
 ## Sample Results
 
 ![result.png](result.png)
+
 *Prompt: familyguy style a futuristic robot standing in a park*
 
 ## Possible Enhancements
